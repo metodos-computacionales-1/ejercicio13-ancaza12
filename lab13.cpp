@@ -1,5 +1,5 @@
 #include <iostream>
-int addition(int &a, int b)
+int addition(int a, int b)
 {
     int r;
     r=a+b;
@@ -17,4 +17,4 @@ int main(void)
     std::cout<< "The value of x is " <<x<<"\n";
     return 0;
 }
-//Este ejercicio imprime: The result is 8 y x es 8  (Por referencia)
+//Este ejercicio imprime: The result is 8 y x es 5  (Por valor)
