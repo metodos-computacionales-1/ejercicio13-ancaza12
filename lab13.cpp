@@ -1,5 +1,5 @@
 #include <iostream>
-int addition(int a, int b)
+int addition(const int &a, int b)
 {
     int r;
     r=a+b;
@@ -17,4 +17,6 @@ int main(void)
     std::cout<< "The value of x is " <<x<<"\n";
     return 0;
 }
-//Este ejercicio imprime: The result is 8 y x es 5  (Por valor)
+//Este ejercicio no imprime, ya que sale el error de:assigment of read-only reference 'a'. Por lo que no puedo definir la variable a=r porque r es un valor y a es una dirección de memoria.  (Ejercicio 2)
+
+
