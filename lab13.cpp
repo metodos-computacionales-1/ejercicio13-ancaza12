@@ -1,13 +1,16 @@
 #include <iostream>
-void print_message(void)
+int addition(int a, int b)
 {
-    std::cout<< "this is a message" <<std::endl;
+    int r;
+    r=a+b;
+    return r;
 }
 
 int main(void)
 {
-    print_message();
+    int z;
+    z=addition(5,3);
+    std::cout<< "The result is " <<z;
     return 0;
 }
-
-//Este ejercicio imprime: this is a message. (Void argument)
+//Este ejercicio imprime: The result is 8. (Int argument)
