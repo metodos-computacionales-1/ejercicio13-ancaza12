@@ -1,19 +1,17 @@
 #include <iostream>
-long factorial(long n)
-{
-    int a=n;
-    if (a>1)
-        return (a*factorial(a-1));
-    else
-        return 1;
-}
 
-int main(void)
-{
-    long number=9;
-    std::cout<< number<<"! = " <<factorial(number)<<"\n";
+int main(void){
+    int ant,act,aux;
+    ant=0;
+    act=1;
+    for (int i = 0; i<10; i++){
+        std::cout<< "  " <<act<<"\n";
+        aux= act;
+        act= act + ant;
+        ant= aux;
+    }
     return 0;
 }
-//Este ejercicio imprime el valor de 9! que es el valor que entra. (Recursive functions)
+//Este ejercicio imprime la serie fibonacci con los primeros 10 numeros (Ejercicio3)
 
 
