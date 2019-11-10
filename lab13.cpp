@@ -1,22 +1,19 @@
 #include <iostream>
-int addition(int a, int b=0)
+long factorial(long n)
 {
-    int r;
-    r=a+b;
-    return r;
+    int a=n;
+    if (a>1)
+        return (a*factorial(a-1));
+    else
+        return 1;
 }
 
 int main(void)
 {
-    int x,y,z;
-    x=5;
-    y=3;
-    z=addition(x,y);
-    std::cout<< "The result is " <<z<<"\n";
-    z=addition(x);
-    std::cout<< "The result is " <<z<<"\n";
+    long number=9;
+    std::cout<< number<<"! = " <<factorial(number)<<"\n";
     return 0;
 }
-//Este ejercicio imprime 8 y 5. Ya que si tiene las dos variables, calcula su valor con estas pero si solo ingresa x el valor de y está definido como b=0. (Default arguments)
+//Este ejercicio imprime el valor de 9! que es el valor que entra. (Recursive functions)
 
 
