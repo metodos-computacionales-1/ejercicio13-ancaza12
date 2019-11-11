@@ -38,7 +38,7 @@ void relleno(int n,float **matriz){
             }
             
             else if(co==0){
-                result=2;
+                result=2.0;
                 matriz[fi][co]= result;
             }
             else{
@@ -53,9 +53,12 @@ void imprimeMatriz(int n,float **matriz){
     std::cout << "Matriz"<< std::endl;
     for(int co =0; co<n;co++){
         for(int fi=0; fi<n; fi++){ 
-            std::cout << matriz[fi][co];
+            std::cout << matriz[fi][co]<< "  ";
+            std::cout.precision(16);
+            std::cout.setf(std::ios::scientific);
 
         }
+        
     std::cout<< std::endl;        
     }
 }
