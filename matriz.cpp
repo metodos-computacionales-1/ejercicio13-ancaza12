@@ -86,7 +86,6 @@ void multiplica(int n, float **matriz1, float **matriz2, float **c){
             std::cout.precision(16);
             std::cout.setf(std::ios::scientific);
         }   
-    std::cout <<2<< "  ";
     std::cout<< std::endl;        
     }       
 }
